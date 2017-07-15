@@ -1,5 +1,6 @@
 #include <jni.h>
 
+extern "C"
 JNIEXPORT void JNICALL Java_hz_library_gpuimage_GPUImageNativeLibrary_YUVtoRBGA(JNIEnv * env, jobject obj, jbyteArray yuv420sp, jint width, jint height, jintArray rgbOut)
 {
     int             sz;
